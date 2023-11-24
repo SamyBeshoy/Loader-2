@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #232d39;
+}
+.loader_p {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader_p .ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin: 0 5px;
+    animation-name: toleft;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.loader_p .unusual {
+    animation-name: toRight;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes toRight {
+    to {
+        transform: translateX(100px);
+    }
+}
+@keyframes toleft {
+    to {
+        transform: translateX(-20px);
+    }
+}
